@@ -21,6 +21,8 @@ export function HeroSection() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0])
   const contentY = useTransform(scrollYProgress, [0, 0.5], [0, -40])
 
+  const titleLines = ["抹茶だけが、", "日本茶ではない。"]
+
   return (
     <section
       ref={sectionRef}
@@ -38,7 +40,7 @@ export function HeroSection() {
         >
           <Image
             src="/images/tea-collage.png"
-            alt="茶畑の朝霧、乾茶、急須から注がれる淡い緑の水色、抹茶、ガラス急須のコラージュ"
+            alt="茶畑、乾茶、急須から注がれる煎茶の水色、焙じ、ガラス急須などのイメージ"
             fill
             priority
             sizes="100vw"
@@ -62,7 +64,7 @@ export function HeroSection() {
         style={{ opacity: contentOpacity, y: contentY }}
       >
         <p className="mb-4 max-w-xl text-xs font-medium uppercase tracking-[0.45em] text-emerald-100/90">
-          Terroir · Cultivar · Suishoku
+          Sencha · Hōjicha · Genmaicha — Leaves & terroir
         </p>
         <motion.h1
           className="font-heading max-w-3xl text-4xl font-medium leading-[1.15] tracking-wide text-white drop-shadow-sm sm:text-5xl md:text-6xl"
@@ -75,7 +77,7 @@ export function HeroSection() {
             },
           }}
         >
-          {["霧のあとに澄む、", "一杯の輪郭。"].map((line) => (
+          {titleLines.map((line) => (
             <motion.span
               key={line}
               className="block overflow-hidden"
@@ -93,26 +95,33 @@ export function HeroSection() {
           ))}
         </motion.h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone-200/95 sm:text-lg">
-          土壌の重さ、品種の癖、蒸しと火入れが葉底に刻む痕跡——日本茶は、産地と製法の物語を静かに湛えています。松樹園は、その複層を水色と香気の言葉で綴る記録です。
+          澄んだ黄緑の煎茶、琥珀の焙じ、玄米の香ばしさ。葉と茎の日本茶には、蒸しと火入れが刻む物語があります。松樹園は、
+          <strong className="font-medium text-white">
+            抹茶以外
+          </strong>
+          のカップを、水色と香気の言葉で綴ります。
+        </p>
+        <p className="mt-4 max-w-xl text-[0.7rem] leading-relaxed text-stone-400/95 sm:text-xs">
+          ※当サイトは抹茶（碾茶）の記事・図鑑項目は扱いません。
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link
-            href="/producers"
+            href="/farms"
             className={cn(
               buttonVariants({ size: "lg" }),
               "rounded-full bg-primary px-7 text-primary-foreground shadow-lg shadow-emerald-950/40 no-underline"
             )}
           >
-            農家の物語を読む
+            FARMS · 農家を見る
           </Link>
           <Link
-            href="/tea-library"
+            href="/the-leaves"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
               "rounded-full border-white/40 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20 no-underline"
             )}
           >
-            お茶図鑑へ
+            THE LEAVES 図鑑
           </Link>
         </div>
         <motion.div

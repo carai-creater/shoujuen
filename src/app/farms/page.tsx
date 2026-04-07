@@ -10,12 +10,12 @@ import { FadeIn } from "@/components/motion/fade-in"
 import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
-  title: "農家紹介",
+  title: "FARMS · 農家紹介",
   description:
-    "土壌、品種、製茶へのこだわり。松樹園が現地で杯を重ねて選んだ生産者の記録。",
+    "煎茶・焙じ作りに情熱を注ぐ生産者。土壌、品種、製茶へのこだわりを、松樹園が現地で記録します。",
 }
 
-export default function ProducersPage() {
+export default function FarmsPage() {
   return (
     <div className="bg-background">
       <header className="relative overflow-hidden border-b border-border/70">
@@ -34,13 +34,16 @@ export default function ProducersPage() {
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
           <FadeIn>
             <p className="text-xs font-medium uppercase tracking-[0.4em] text-primary">
-              Producers
+              Farms
             </p>
             <h1 className="font-heading mt-4 text-4xl font-medium tracking-wide text-foreground sm:text-5xl">
               農家紹介
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              茶樹が根を下ろす土の履歴、品種選びの意図、そして蒸し・揉み・乾燥の微差。ここでは、現地で何度も淹れ直しながら確認した「杯の芯」に近い情報だけを、長文で丁寧にまとめています。
+              煎茶の水色も、焙じの甘香も、土と品種と火の設計から生まれます。茶樹が根を下ろす土の履歴、品種選びの意図、蒸し・揉み・乾燥の微差を、現地で何度も淹れ直しながら記録しています。
+            </p>
+            <p className="mt-4 max-w-2xl text-xs leading-relaxed text-muted-foreground">
+              ※抹茶園・碾茶の紹介は行いません（葉茶・茎茶の生産者に限定）。
             </p>
           </FadeIn>
         </div>
@@ -64,11 +67,7 @@ export default function ProducersPage() {
 
         <div className="space-y-28 py-16 sm:space-y-36 sm:py-24">
           {producers.map((p, index) => (
-            <article
-              key={p.id}
-              id={p.id}
-              className="scroll-mt-28"
-            >
+            <article key={p.id} id={p.id} className="scroll-mt-28">
               <FadeIn>
                 <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
                   <div className="lg:col-span-5">

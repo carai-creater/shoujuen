@@ -17,23 +17,23 @@ export function ProducersPreview() {
         <FadeIn className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
             <p className="text-xs font-medium uppercase tracking-[0.35em] text-primary">
-              Producers
+              Farms
             </p>
             <h2 className="font-heading mt-3 text-3xl font-medium tracking-wide text-foreground sm:text-4xl">
               厳選して訪ねた農家
             </h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              土壌の履歴、品種の意図、製茶の微差。現地で杯を重ねたうえで、松樹園が長く紹介したい生産者だけを載せています。
+              煎茶の水色も焙じの甘香も、土と品種と火から。現地で杯を重ねたうえで、松樹園が長く紹介したい生産者だけを載せています。
             </p>
           </div>
           <Link
-            href="/producers"
+            href="/farms"
             className={cn(
               buttonVariants({ variant: "outline" }),
               "w-fit shrink-0 rounded-full border-primary/30 bg-background/80"
             )}
           >
-            農家紹介の一覧へ
+            FARMS 一覧へ
           </Link>
         </FadeIn>
 
@@ -68,7 +68,7 @@ export function ProducersPreview() {
                 <div className="flex flex-1 flex-col p-6 sm:p-8">
                   <h3 className="font-heading text-xl font-medium text-foreground">
                     <Link
-                      href={`/producers#${p.id}`}
+                      href={`/farms#${p.id}`}
                       className="no-underline transition-colors hover:text-primary"
                     >
                       {p.name}

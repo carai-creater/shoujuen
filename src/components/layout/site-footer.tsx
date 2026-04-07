@@ -14,7 +14,10 @@ export function SiteFooter() {
               松樹園
             </div>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              産地のテロワール、品種、製法の差異を、杯の水色とともに読み解く独立メディア。販売は行わず、茶の輪郭だけを丁寧に記録します。
+              煎茶・茎茶・焙じ・玄米茶など、葉と茎の日本茶に焦点を当てた独立メディア。産地のテロワールと蒸し・火入れの差異を、水色と香気で読み解きます。販売は行いません。
+            </p>
+            <p className="text-[0.7rem] leading-relaxed text-muted-foreground/90">
+              ※抹茶（碾茶）の記事・商品紹介は扱いません。
             </p>
           </div>
           <nav className="grid grid-cols-2 gap-x-10 gap-y-2 sm:grid-cols-3" aria-label="フッター">

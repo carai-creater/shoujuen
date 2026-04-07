@@ -17,10 +17,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <FadeIn y={20}>
             <p className="font-heading text-2xl font-medium leading-relaxed text-foreground sm:text-3xl">
-              茶は、土地の方言です。
+              煎茶の澄み、焙じの琥珀、玄米の香ばしさ。
             </p>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              同じ品種でも、圃場の方位ひとつでアミノ酸とカテキンのバランスは変わる。松樹園では、そうした微差を恐れずに記録し、杯の透明度と香気の行方として共有していきます。
+              同じ品種でも、圃場の方位ひとつでアミノ酸とカテキンのバランスは変わる。松樹園では、抹茶以外の葉茶・茎茶の微差を恐れずに記録し、水色と香気の行方として共有していきます。
             </p>
           </FadeIn>
         </div>

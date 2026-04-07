@@ -28,15 +28,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "松樹園 | 日本茶のテロワールと水色を綴るメディア",
+    default: "松樹園 | 煎茶・焙じのテロワールと水色を綴るメディア",
     template: "%s | 松樹園",
   },
   description:
-    "産地の土壌、品種、蒸しと火入れ。杯に映る水色とともに日本茶の専門的な記録をお届けします。",
+    "抹茶以外の日本茶——煎茶、茎茶、焙じ、玄米茶。産地の土壌、品種、蒸しと火入れを、杯の水色とともに専門的に記録します。",
   openGraph: {
     title: "松樹園 Tea Journal",
     description:
-      "産地のテロワールと製法の差異を、静かに読み解く独立メディア。",
+      "煎茶・焙じ・玄米茶。抹茶以外の日本茶のテロワールと水色を綴るメディア。",
     locale: "ja_JP",
   },
 }
