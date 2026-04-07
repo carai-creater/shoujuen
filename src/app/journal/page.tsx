@@ -14,37 +14,30 @@ import {
 import { FadeIn, FadeInItem, FadeInStagger } from "@/components/motion/fade-in"
 
 export const metadata: Metadata = {
-  title: "COLUMN",
+  title: "JOURNAL",
   description:
-    "煎茶・茎茶・焙じ・玄米茶。抹茶以外の日本茶を、産地と製法の専門視点で綴るコラム。",
+    "碾茶・抹茶の産地、栽培、石臼挽き、茶道。プロの視点で綴る JOURNAL。",
 }
 
-export default function ColumnPage() {
+export default function JournalPage() {
   return (
     <div className="bg-background">
       <div className="relative border-b border-border/70 bg-muted/25">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_0%,_rgba(34,120,80,0.08),_transparent_50%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_30%_0%,_rgba(22,90,55,0.06),_transparent_55%)]" />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
           <FadeIn>
             <p className="text-xs font-medium uppercase tracking-[0.45em] text-primary">
-              Column
+              Journal
             </p>
             <h1 className="font-heading mt-4 text-4xl font-medium tracking-wide text-foreground sm:text-5xl">
-              COLUMN
+              JOURNAL
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              茶樹の品種、圃場の方位、蒸しの秒数、焙煎の温度勾配——
+              覆下栽培の光環境、蒸しの通熱、石臼の粒度、茶室の作法——
               <strong className="font-medium text-foreground">
-                抹茶以外
+                抹茶（碾茶）
               </strong>
-              の日本茶には、杯の水色と香気に現れる「説明のしがい」があります。文献と現地試飲を往復しながら、目利きの視点で記録します。
-            </p>
-            <p className="mt-6 max-w-2xl text-xs leading-relaxed text-muted-foreground">
-              ※
-              <span className="text-foreground/80">
-                当メディアでは抹茶（碾茶・点茶の作法）の紹介・記事は扱いません。
-              </span>
-              煎茶・茎茶・焙じ・玄米茶など、葉と茎の茶の多様性に焦点を当てています。
+              の文化と科学は、一枚の濃緑に収まりきらない層を持っています。宇治・西尾・各地の現場と文献を往復しながら、目利きの視点で記録します。
             </p>
           </FadeIn>
         </div>
@@ -72,7 +65,7 @@ export default function ColumnPage() {
                   </div>
                   <CardTitle className="font-heading text-xl leading-snug sm:text-2xl">
                     <Link
-                      href={`/column/${article.slug}`}
+                      href={`/journal/${article.slug}`}
                       className="text-foreground no-underline transition-colors group-hover:text-primary"
                     >
                       {article.title}
@@ -84,7 +77,7 @@ export default function ColumnPage() {
                 </CardHeader>
                 <CardContent>
                   <Link
-                    href={`/column/${article.slug}`}
+                    href={`/journal/${article.slug}`}
                     className="text-sm font-medium text-primary underline-offset-4 hover:underline"
                   >
                     本文を読む

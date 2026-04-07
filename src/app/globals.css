@@ -56,15 +56,15 @@
   --card-foreground: oklch(0.22 0.02 55);
   --popover: oklch(0.995 0.006 95);
   --popover-foreground: oklch(0.22 0.02 55);
-  /* Tea leaf green — primary actions & key accents */
-  --primary: oklch(0.38 0.09 150);
+  /* Matcha deep green — 濃緑 */
+  --primary: oklch(0.32 0.11 152);
   --primary-foreground: oklch(0.99 0.01 95);
-  --secondary: oklch(0.94 0.02 95);
+  --secondary: oklch(0.94 0.02 100);
   --secondary-foreground: oklch(0.28 0.03 55);
-  --muted: oklch(0.94 0.015 100);
+  --muted: oklch(0.94 0.02 98);
   --muted-foreground: oklch(0.48 0.03 55);
-  --accent: oklch(0.93 0.04 145);
-  --accent-foreground: oklch(0.26 0.05 150);
+  --accent: oklch(0.92 0.05 150);
+  --accent-foreground: oklch(0.24 0.06 152);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);

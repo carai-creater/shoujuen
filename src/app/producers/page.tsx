@@ -10,12 +10,12 @@ import { FadeIn } from "@/components/motion/fade-in"
 import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
-  title: "FARMS · 農家紹介",
+  title: "PRODUCERS · 生産者紹介",
   description:
-    "煎茶・焙じ作りに情熱を注ぐ生産者。土壌、品種、製茶へのこだわりを、松樹園が現地で記録します。",
+    "碾茶・抹茶づくりに情熱を注ぐ茶農家・茶師。土壌、品種、石臼挽きを松樹園が記録します。",
 }
 
-export default function FarmsPage() {
+export default function ProducersPage() {
   return (
     <div className="bg-background">
       <header className="relative overflow-hidden border-b border-border/70">
@@ -34,16 +34,13 @@ export default function FarmsPage() {
         <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 sm:py-32">
           <FadeIn>
             <p className="text-xs font-medium uppercase tracking-[0.4em] text-primary">
-              Farms
+              Producers
             </p>
             <h1 className="font-heading mt-4 text-4xl font-medium tracking-wide text-foreground sm:text-5xl">
-              農家紹介
+              生産者紹介
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              煎茶の水色も、焙じの甘香も、土と品種と火の設計から生まれます。茶樹が根を下ろす土の履歴、品種選びの意図、蒸し・揉み・乾燥の微差を、現地で何度も淹れ直しながら記録しています。
-            </p>
-            <p className="mt-4 max-w-2xl text-xs leading-relaxed text-muted-foreground">
-              ※抹茶園・碾茶の紹介は行いません（葉茶・茎茶の生産者に限定）。
+              碾茶の香りは、覆下の日数と蒸しの一秒、石臼の回転に宿る。茶樹が根を下ろす土の履歴、品種選びの意図、そして碾茶工房のこだわりを、現地で何度も点て直しながら記録しています。
             </p>
           </FadeIn>
         </div>
@@ -52,7 +49,7 @@ export default function FarmsPage() {
       <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
         <nav
           className="flex flex-wrap gap-3 border-b border-border/60 pb-8"
-          aria-label="農家セクションへジャンプ"
+          aria-label="生産者セクションへジャンプ"
         >
           {producers.map((p) => (
             <Link
@@ -127,7 +124,7 @@ export default function FarmsPage() {
                     <section className="mt-10 space-y-4">
                       <h3 className="flex items-center gap-2 font-heading text-lg font-medium text-foreground">
                         <LayersIcon className="size-5 text-primary" aria-hidden />
-                        製茶の芯
+                        碾茶・挽きの芯
                       </h3>
                       <p className="leading-[1.9] text-muted-foreground">
                         {p.processNotes}
@@ -145,7 +142,7 @@ export default function FarmsPage() {
                       </p>
                       <p className="relative mt-4 flex items-center gap-2 text-xs text-muted-foreground">
                         <LeafIcon className="size-3.5 text-primary" aria-hidden />
-                        松樹園編集部 · 現地杯試と抽出ログに基づくコメント
+                        松樹園編集部 · 碾茶試飲と点茶ログに基づくコメント
                       </p>
                     </section>
                   </div>

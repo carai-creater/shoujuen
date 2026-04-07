@@ -21,13 +21,13 @@ export function LatestArticles() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <FadeIn className="mb-14 max-w-2xl">
           <p className="text-xs font-medium uppercase tracking-[0.35em] text-primary">
-            Column
+            Journal
           </p>
           <h2 className="font-heading mt-3 text-3xl font-medium tracking-wide text-foreground sm:text-4xl">
-            COLUMN · 最新記事
+            JOURNAL · 最新記事
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            産地の土壌断面から、蒸し工程の物理、焙じの焙煎曲線まで。煎茶・茎茶・焙じ・玄米を対象に、編集部が現地と文献を往復した考察です。
+            覆下栽培の光環境、石臼の粒度、濃茶と薄茶の作法——碾茶と抹茶の専門的な記録をお届けします。
           </p>
         </FadeIn>
 
@@ -47,7 +47,7 @@ export function LatestArticles() {
                   </div>
                   <CardTitle className="font-heading text-lg leading-snug transition-colors group-hover:text-primary">
                     <Link
-                      href={`/column/${article.slug}`}
+                      href={`/journal/${article.slug}`}
                       className="inline-flex items-start gap-1 no-underline outline-none ring-offset-background focus-visible:ring-2 focus-visible:ring-ring"
                     >
                       {article.title}
@@ -73,10 +73,10 @@ export function LatestArticles() {
 
         <FadeIn className="mt-12 flex justify-center" delay={0.15}>
           <Link
-            href="/column"
+            href="/journal"
             className="text-sm font-medium text-primary underline-offset-4 transition-colors hover:underline"
           >
-            COLUMN 一覧へ
+            JOURNAL 一覧へ
           </Link>
         </FadeIn>
       </div>

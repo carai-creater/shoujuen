@@ -1,8 +1,13 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { LeafIcon, MountainIcon, Flame, Droplets } from "lucide-react"
+import {
+  LeafIcon,
+  MapPinIcon,
+  CogIcon,
+  PaletteIcon,
+} from "lucide-react"
 
-import { teaLeaves } from "@/data/tea-leaves"
+import { matchaCatalog } from "@/data/matcha-catalog"
 import { Badge } from "@/components/ui/badge"
 import {
   Card,
@@ -15,39 +20,34 @@ import { Separator } from "@/components/ui/separator"
 import { FadeIn, FadeInItem, FadeInStagger } from "@/components/motion/fade-in"
 
 export const metadata: Metadata = {
-  title: "THE LEAVES · 茶葉図鑑",
+  title: "THE MATCHA · 抹茶図鑑",
   description:
-    "煎茶・茎茶・焙じ・玄米茶。品種、蒸し、火入れ、標高、水色のノートをテイスティング形式で。",
+    "宇治・西尾・静岡。産地、品種、石臼挽き、濃緑の色味と味わいをテイスティングノート形式で。",
 }
 
-export default function TheLeavesPage() {
+export default function TheMatchaPage() {
   return (
     <div className="bg-background">
-      <div className="border-b border-border/70 bg-gradient-to-b from-emerald-950/[0.06] to-background">
+      <div className="border-b border-border/70 bg-gradient-to-b from-emerald-950/10 via-emerald-950/[0.04] to-background">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
           <FadeIn>
             <p className="text-xs font-medium uppercase tracking-[0.45em] text-primary">
-              The Leaves
+              The Matcha
             </p>
             <h1 className="font-heading mt-4 text-4xl font-medium tracking-wide text-foreground sm:text-5xl">
-              茶葉図鑑
+              抹茶図鑑
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              抹茶（碾茶）の項目は置いていません。煎茶の澄んだ黄緑、焙じの琥珀、玄米茶の麦の香ばしさ——
-              <strong className="font-medium text-foreground">
-                葉と茎の日本茶
-              </strong>
-              のスペクトルを、ワインのテイスティングノートのように整理した参照表です。
-            </p>
-            <p className="mt-4 max-w-2xl text-xs leading-relaxed text-muted-foreground">
-              ※掲載クラスは抹茶を含みません。
+              碾茶は覆下栽培から蒸し、乾燥、石臼挽きまで、工程のすべてが杯の
+              <strong className="font-medium text-foreground">濃緑</strong>
+              に刻まれます。産地の土と品種、臼の音と粒度——ワインのテイスティングノートのように、抹茶のスペクトルを整理した参照表です。
             </p>
           </FadeIn>
           <FadeIn className="mt-10" delay={0.08}>
-            <div className="relative aspect-[2.1/1] max-h-[min(48vh,400px)] w-full overflow-hidden rounded-2xl border border-border/70 shadow-md">
+            <div className="relative aspect-[2.1/1] max-h-[min(48vh,400px)] w-full overflow-hidden rounded-2xl border border-primary/20 shadow-md ring-1 ring-primary/10">
               <Image
                 src="/images/tea-varieties-collage.png"
-                alt="煎茶・焙じ・玄米茶の乾茶と、急須で淹れた澄んだ水色のコラージュ"
+                alt="茶の葉、抹茶の濃緑、茶筅で点てた泡のイメージのコラージュ"
                 fill
                 sizes="(min-width: 1024px) 72rem, 100vw"
                 className="object-cover object-[50%_35%]"
@@ -60,26 +60,40 @@ export default function TheLeavesPage() {
 
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <FadeInStagger className="grid gap-8 lg:grid-cols-2">
-          {teaLeaves.map((tea) => (
-            <FadeInItem key={tea.id}>
-              <Card className="h-full overflow-hidden border-border/80 bg-card/95 shadow-sm transition-shadow hover:shadow-md">
-                <CardHeader className="gap-2 border-b border-border/60 bg-muted/20 pb-4">
+          {matchaCatalog.map((m) => (
+            <FadeInItem key={m.id}>
+              <Card className="h-full overflow-hidden border-border/80 bg-card/95 shadow-sm transition-shadow hover:border-primary/25 hover:shadow-md">
+                <CardHeader className="gap-2 border-b border-border/60 bg-gradient-to-r from-primary/[0.06] to-transparent pb-4">
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
                       <CardTitle className="font-heading text-xl sm:text-2xl">
-                        {tea.nameJa}
+                        {m.nameJa}
                       </CardTitle>
                       <CardDescription className="mt-1 text-xs tracking-wide">
-                        {tea.nameEn}
+                        {m.nameEn}
                       </CardDescription>
                     </div>
-                    <Badge variant="secondary" className="shrink-0 font-normal">
-                      {tea.style}
+                    <Badge className="shrink-0 border-primary/30 bg-primary/10 font-normal text-primary">
+                      抹茶
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="grid gap-6 pt-6">
                   <dl className="grid gap-4 text-sm">
+                    <div className="flex gap-3">
+                      <MapPinIcon
+                        className="mt-0.5 size-4 shrink-0 text-primary"
+                        aria-hidden
+                      />
+                      <div>
+                        <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                          産地
+                        </dt>
+                        <dd className="mt-1 leading-relaxed text-foreground">
+                          {m.origin}
+                        </dd>
+                      </div>
+                    </div>
                     <div className="flex gap-3">
                       <LeafIcon
                         className="mt-0.5 size-4 shrink-0 text-primary"
@@ -87,52 +101,24 @@ export default function TheLeavesPage() {
                       />
                       <div>
                         <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                          品種 / 原料
+                          品種
                         </dt>
                         <dd className="mt-1 leading-relaxed text-foreground">
-                          {tea.cultivar}
+                          {m.cultivar}
                         </dd>
                       </div>
                     </div>
                     <div className="flex gap-3">
-                      <Droplets
+                      <CogIcon
                         className="mt-0.5 size-4 shrink-0 text-primary"
                         aria-hidden
                       />
                       <div>
                         <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                          蒸し
+                          挽き方
                         </dt>
                         <dd className="mt-1 leading-relaxed text-foreground">
-                          {tea.steaming}
-                        </dd>
-                      </div>
-                    </div>
-                    <div className="flex gap-3">
-                      <Flame
-                        className="mt-0.5 size-4 shrink-0 text-amber-700/90"
-                        aria-hidden
-                      />
-                      <div>
-                        <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                          火入れ / 焙煎
-                        </dt>
-                        <dd className="mt-1 leading-relaxed text-foreground">
-                          {tea.firing}
-                        </dd>
-                      </div>
-                    </div>
-                    <div className="flex gap-3">
-                      <MountainIcon
-                        className="mt-0.5 size-4 shrink-0 text-primary"
-                        aria-hidden
-                      />
-                      <div>
-                        <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                          標高 / 立地
-                        </dt>
-                        <dd className="mt-1 leading-relaxed text-foreground">
-                          {tea.elevation}
+                          {m.milling}
                         </dd>
                       </div>
                     </div>
@@ -142,28 +128,29 @@ export default function TheLeavesPage() {
 
                   <div className="space-y-4 text-sm leading-relaxed">
                     <div>
-                      <p className="text-xs font-medium uppercase tracking-wider text-primary">
-                        水色（すいしょく）
+                      <p className="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wider text-primary">
+                        <PaletteIcon className="size-3.5" aria-hidden />
+                        色味
                       </p>
-                      <p className="mt-2 text-foreground/95">{tea.suishoku}</p>
+                      <p className="mt-2 text-foreground/95">{m.color}</p>
                     </div>
                     <div>
                       <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                         香気
                       </p>
-                      <p className="mt-2">{tea.aroma}</p>
+                      <p className="mt-2">{m.aroma}</p>
                     </div>
                     <div>
                       <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                         味わい
                       </p>
-                      <p className="mt-2">{tea.palate}</p>
+                      <p className="mt-2">{m.palate}</p>
                     </div>
                     <div>
                       <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
                         余韻
                       </p>
-                      <p className="mt-2">{tea.finish}</p>
+                      <p className="mt-2">{m.finish}</p>
                     </div>
                   </div>
                 </CardContent>

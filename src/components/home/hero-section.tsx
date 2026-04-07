@@ -21,12 +21,12 @@ export function HeroSection() {
   const contentOpacity = useTransform(scrollYProgress, [0, 0.45], [1, 0])
   const contentY = useTransform(scrollYProgress, [0, 0.5], [0, -40])
 
-  const titleLines = ["抹茶だけが、", "日本茶ではない。"]
+  const titleLines = ["一期一会の、", "抹茶体験を。"]
 
   return (
     <section
       ref={sectionRef}
-      className="relative flex min-h-[min(92vh,880px)] items-end overflow-hidden bg-stone-900"
+      className="relative flex min-h-[min(92vh,880px)] items-end overflow-hidden bg-stone-950"
     >
       <motion.div
         className="absolute inset-0"
@@ -40,7 +40,7 @@ export function HeroSection() {
         >
           <Image
             src="/images/tea-varieties-collage.png"
-            alt="煎茶の乾茶、焙じ茶、玄米茶、急須から注がれる緑の水色、抽出後の葉のコラージュ"
+            alt="碾茶の抹茶、乾茶、茶筅で点てた泡の濃緑のイメージ"
             fill
             priority
             sizes="100vw"
@@ -48,11 +48,11 @@ export function HeroSection() {
           />
         </motion.div>
         <div
-          className="absolute inset-0 bg-gradient-to-t from-stone-950/95 via-stone-900/55 to-stone-900/25"
+          className="absolute inset-0 bg-gradient-to-t from-stone-950/95 via-emerald-950/45 to-stone-900/35"
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(255,255,255,0.12),_transparent_55%)]"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(34,120,80,0.15),_transparent_55%)]"
           aria-hidden
         />
       </motion.div>
@@ -64,7 +64,7 @@ export function HeroSection() {
         style={{ opacity: contentOpacity, y: contentY }}
       >
         <p className="mb-4 max-w-xl text-xs font-medium uppercase tracking-[0.45em] text-emerald-100/90">
-          Sencha · Hōjicha · Genmaicha — Leaves & terroir
+          Matcha · Tencha · Ishiusu
         </p>
         <motion.h1
           className="font-heading max-w-3xl text-4xl font-medium leading-[1.15] tracking-wide text-white drop-shadow-sm sm:text-5xl md:text-6xl"
@@ -95,33 +95,26 @@ export function HeroSection() {
           ))}
         </motion.h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-stone-200/95 sm:text-lg">
-          澄んだ黄緑の煎茶、琥珀の焙じ、玄米の香ばしさ。葉と茎の日本茶には、蒸しと火入れが刻む物語があります。松樹園は、
-          <strong className="font-medium text-white">
-            抹茶以外
-          </strong>
-          のカップを、水色と香気の言葉で綴ります。
-        </p>
-        <p className="mt-4 max-w-xl text-[0.7rem] leading-relaxed text-stone-400/95 sm:text-xs">
-          ※当サイトは抹茶（碾茶）の記事・図鑑項目は扱いません。
+          澄み切った濃緑、茶筅が立てるきめ細かな泡、石臼の音で挽き上げる香り——抹茶は、日本の風土と作法のなかで育まれた一杯です。松樹園は、その複層を言葉で綴ります。
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link
-            href="/farms"
+            href="/producers"
             className={cn(
               buttonVariants({ size: "lg" }),
-              "rounded-full bg-primary px-7 text-primary-foreground shadow-lg shadow-emerald-950/40 no-underline"
+              "rounded-full bg-primary px-7 text-primary-foreground shadow-lg shadow-emerald-950/50 no-underline"
             )}
           >
-            FARMS · 農家を見る
+            PRODUCERS を見る
           </Link>
           <Link
-            href="/the-leaves"
+            href="/the-matcha"
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
               "rounded-full border-white/40 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20 no-underline"
             )}
           >
-            THE LEAVES 図鑑
+            THE MATCHA 図鑑
           </Link>
         </div>
         <motion.div

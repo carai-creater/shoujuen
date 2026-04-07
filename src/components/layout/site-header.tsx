@@ -17,7 +17,7 @@ import {
 
 const brand = {
   name: "松樹園",
-  subtitle: "Tea Journal",
+  subtitle: "Matcha Journal",
 }
 
 export function SiteHeader() {
