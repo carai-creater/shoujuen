@@ -1,0 +1,135 @@
+{
+  "Metadata": {
+    "title": "松樹園 | 抹茶のテロワールと濃緑を綴るメディア",
+    "description": "産地の碾茶、品種、石臼挽き、濃茶と薄茶の作法。宇治・西尾をはじめ、抹茶の専門的な記録をお届けします。"
+  },
+  "LocaleLayout": {
+    "title": "松樹園 | 抹茶のテロワールと濃緑を綴るメディア"
+  },
+  "Brand": {
+    "name": "松樹園",
+    "subtitle": "Matcha Journal"
+  },
+  "nav": {
+    "home": { "label": "トップ", "description": "濃緑と一期一会" },
+    "theMatcha": { "label": "抹茶図鑑", "description": "産地・品種・挽き・味わい" },
+    "producers": { "label": "生産者紹介", "description": "茶農家・茶師のこだわり" },
+    "journal": { "label": "JOURNAL", "description": "碾茶と茶道の記録" },
+    "howTo": { "label": "点て方", "description": "濃茶・薄茶・モダンな楽しみ方" }
+  },
+  "LanguageSwitcher": {
+    "label": "言語",
+    "ja": "日本語",
+    "en": "English"
+  },
+  "Footer": {
+    "description": "抹茶（碾茶）の産地、品種、石臼挽き、茶道の精神性を、濃緑の一杯とともに読み解く独立メディア。販売は行いません。",
+    "ceoLine": "代表取締役 / 編集長：{name}（{kana}）",
+    "copyright": "Shoujuen Tea Journal. All rights reserved."
+  },
+  "Hero": {
+    "eyebrow": "Matcha · Tencha · Ishiusu",
+    "line1": "一期一会の、",
+    "line2": "抹茶体験を。",
+    "lead": "澄み切った濃緑、茶筅が立てるきめ細かな泡、石臼の音で挽き上げる香り——抹茶は、日本の風土と作法のなかで育まれた一杯です。松樹園は、その複層を言葉で綴ります。",
+    "ctaProducers": "PRODUCERS を見る",
+    "ctaMatcha": "THE MATCHA 図鑑",
+    "scroll": "Scroll"
+  },
+  "HomeClosing": {
+    "line": "一杯の濃緑に、風土と作法が宿る。",
+    "body": "碾茶は覆下栽培から蒸し、乾燥、石臼挽きまで、工程のすべてが茶碗の色と香りに刻まれます。松樹園では、抹茶の多様性と文化性を、目利きの視点で記録します。"
+  },
+  "LatestArticles": {
+    "eyebrow": "Journal",
+    "title": "JOURNAL · 最新記事",
+    "intro": "覆下栽培の光環境、石臼の粒度、濃茶と薄茶の作法——碾茶と抹茶の専門的な記録をお届けします。",
+    "cta": "JOURNAL 一覧へ",
+    "readUnit": "分"
+  },
+  "ProducersPreview": {
+    "eyebrow": "Producers",
+    "title": "厳選した碾茶の生産者",
+    "intro": "覆下の日数、蒸しの通熱、石臼の回転に宿る個性。松樹園が長く紹介したい生産者だけを載せています。",
+    "cta": "PRODUCERS 一覧へ"
+  },
+  "Ceo": {
+    "eyebrow": "Editorial",
+    "title": "CEO · 編集長",
+    "intro": "松樹園の編集方針と取材の根幹を担う代表のプロフィールと、これまでの主な実績（武勇伝）です。",
+    "legendsTitle": "武勇伝",
+    "legendsSubtitle": "— 取材・編集・茶道にまつわる実績"
+  },
+  "JournalPage": {
+    "eyebrow": "Journal",
+    "title": "JOURNAL",
+    "lead": "覆下栽培の光環境、石臼の粒度、濃茶と薄茶の作法——碾茶と抹茶の文化と科学は、一枚の濃緑に収まりきらない層を持っています。宇治・西尾・各地の現場と文献を往復しながら、目利きの視点で記録します。",
+    "count": "全 {count} 件",
+    "readMore": "本文を読む",
+    "readUnit": "分"
+  },
+  "Article": {
+    "back": "← JOURNAL 一覧",
+    "readUnit": "分",
+    "draftNote": "（本文は編集中です。データソースと図版を追って公開予定です。）",
+    "notFoundTitle": "記事が見つかりません"
+  },
+  "TheMatcha": {
+    "metaTitle": "THE MATCHA · 抹茶図鑑",
+    "metaDescription": "宇治・西尾・静岡。産地、品種、石臼挽き、濃緑の色味と味わいをテイスティングノート形式で。",
+    "heroImageAlt": "茶の葉、抹茶の濃緑、茶筅で点てた泡のイメージのコラージュ",
+    "eyebrow": "The Matcha",
+    "title": "抹茶図鑑",
+    "lead": "碾茶は覆下栽培から蒸し、乾燥、石臼挽きまで、工程のすべてが茶碗の濃緑に刻まれます。産地の土と品種、臼の音と粒度——ワインのテイスティングノートのように、抹茶のスペクトルを整理した参照表です。",
+    "badge": "抹茶",
+    "origin": "産地",
+    "cultivar": "品種",
+    "milling": "挽き方",
+    "color": "色味",
+    "aroma": "香気",
+    "palate": "味わい",
+    "finish": "余韻"
+  },
+  "ProducersPage": {
+    "eyebrow": "Producers",
+    "title": "生産者紹介",
+    "metaDescription": "碾茶・抹茶づくりに情熱を注ぐ茶農家・茶師。土壌、品種、石臼挽きを松樹園が記録します。",
+    "lead": "碾茶の香りは、覆下の日数と蒸しの一秒、石臼の回転に宿る。茶樹が根を下ろす土の履歴、品種選びの意図、そして碾茶工房のこだわりを、現地で何度も点て直しながら記録しています。",
+    "soil": "土壌とテロワール",
+    "process": "碾茶・挽きの芯",
+    "curator": "目利きの視点",
+    "curatorNote": "松樹園編集部 · 碾茶試飲と点茶ログに基づくコメント",
+    "jumpNavLabel": "生産者セクションへジャンプ"
+  },
+  "HowTo": {
+    "metaTitle": "HOW TO · 点て方・楽しみ方",
+    "imageAlt": "抹茶を点てる所作と茶器のイメージ",
+    "eyebrow": "How to",
+    "title": "点て方・楽しみ方",
+    "lead": "濃茶と薄茶では、湯の量・温度・茶筅の動きの目的がまったく異なります。以下は稽古とカフェ双方で再現しやすいベースラインです。流派・茶会の礼法がある場合は、そちらを優先してください。",
+    "thinTitle": "薄茶（うすちゃ）",
+    "thinSubtitle": "碗の中で「きめ」を立てる",
+    "thickTitle": "濃茶（こいちゃ）",
+    "thickSubtitle": "粘度と旨味の塊を「解す」",
+    "fieldTemp": "湯温",
+    "fieldAmount": "抹茶量",
+    "fieldWhisk": "茶筅",
+    "fieldWait": "待ち",
+    "thinTempValue": "約 75〜85℃（沸かしすぎない。軟水が理想）",
+    "thinAmountValue": "目安 2 ちゃしき（約 2g）／水 70ml 前後",
+    "thinWhiskValue": "穗が細かいもの。W 字型で腕を素早く前後に動かし、泡立ちを確認",
+    "thinWaitValue": "立てすぎない。表面に細かな泡が均一に乗れば完了",
+    "thickTempValue": "やや低め 60〜70℃ 帯が多い（流派・銘柄で差あり）",
+    "thickAmountValue": "目安 3.5〜4g 以上／少量の湯から開始し足すことも",
+    "thickWhiskValue": "泡を立てない。碗底を這わせるようにゆっくり均一に",
+    "thickWaitValue": "澱が出ないよう、一気にかき回しすぎない",
+    "modernTitle": "モダンな楽しみ方",
+    "modernBody": "抹茶ラテでは、牛乳の脂肪が香気を包み込みやすいため、濃いめの碾茶か、泡立て器で軽くエアレーションして香気を抜くとバランスが取りやすいです。ソーダ割りでは、微粉が沈殿しやすいのでよく混ぜ、氷の溶解で薄まる分を最初から濃い目にするのがコツです。",
+    "backTop": "トップへ戻る"
+  },
+  "NotFound": {
+    "title": "ページが見つかりません",
+    "description": "URL が変更されたか、記事がまだ公開されていない可能性があります。",
+    "back": "トップへ戻る"
+  }
+}

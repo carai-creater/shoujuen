@@ -1,13 +1,17 @@
+"use client"
+
+import { useTranslations } from "next-intl"
 import Image from "next/image"
-import Link from "next/link"
 import { MapPinIcon, MountainIcon } from "lucide-react"
 
+import { Link } from "@/i18n/navigation"
 import { producers } from "@/data/producers"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { FadeIn } from "@/components/motion/fade-in"
 
 export function ProducersPreview() {
+  const t = useTranslations("ProducersPreview")
   const featured = producers.slice(0, 2)
 
   return (
@@ -17,14 +21,12 @@ export function ProducersPreview() {
         <FadeIn className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">
             <p className="text-xs font-medium uppercase tracking-[0.35em] text-primary">
-              Producers
+              {t("eyebrow")}
             </p>
             <h2 className="font-heading mt-3 text-3xl font-medium tracking-wide text-foreground sm:text-4xl">
-              厳選した碾茶の生産者
+              {t("title")}
             </h2>
-            <p className="mt-4 text-muted-foreground leading-relaxed">
-              覆下の日数、蒸しの通熱、石臼の回転に宿る個性。松樹園が長く紹介したい生産者だけを載せています。
-            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">{t("intro")}</p>
           </div>
           <Link
             href="/producers"
@@ -33,7 +35,7 @@ export function ProducersPreview() {
               "w-fit shrink-0 rounded-full border-primary/30 bg-background/80"
             )}
           >
-            PRODUCERS 一覧へ
+            {t("cta")}
           </Link>
         </FadeIn>
 

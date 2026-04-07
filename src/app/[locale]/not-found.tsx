@@ -1,19 +1,22 @@
-import Link from "next/link"
+import { getLocale, getTranslations, setRequestLocale } from "next-intl/server"
 
+import { Link } from "@/i18n/navigation"
 import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { FadeIn } from "@/components/motion/fade-in"
 
-export default function NotFound() {
+export default async function NotFound() {
+  const locale = await getLocale()
+  setRequestLocale(locale)
+  const t = await getTranslations("NotFound")
+
   return (
     <div className="mx-auto flex min-h-[50vh] max-w-lg flex-col justify-center px-4 py-24 text-center sm:px-6">
       <FadeIn>
         <p className="font-heading text-6xl font-medium text-primary/80">404</p>
-        <h1 className="font-heading mt-4 text-2xl text-foreground">
-          ページが見つかりません
-        </h1>
+        <h1 className="font-heading mt-4 text-2xl text-foreground">{t("title")}</h1>
         <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-          URL が変更されたか、記事がまだ公開されていない可能性があります。
+          {t("description")}
         </p>
         <Link
           href="/"
@@ -22,7 +25,7 @@ export default function NotFound() {
             "mt-8 inline-flex rounded-full"
           )}
         >
-          トップへ戻る
+          {t("back")}
         </Link>
       </FadeIn>
     </div>

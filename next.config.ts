@@ -1,4 +1,7 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
+import createNextIntlPlugin from "next-intl/plugin"
+
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts")
 
 const nextConfig: NextConfig = {
   async redirects() {
@@ -12,8 +15,8 @@ const nextConfig: NextConfig = {
       { source: "/brew", destination: "/how-to", permanent: true },
       { source: "/brewing", destination: "/how-to", permanent: true },
       { source: "/tea-library", destination: "/the-matcha", permanent: true },
-    ];
+    ]
   },
-};
+}
 
-export default nextConfig;
+export default withNextIntl(nextConfig)

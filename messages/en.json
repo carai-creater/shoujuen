@@ -1,0 +1,135 @@
+{
+  "Metadata": {
+    "title": "Shoujuen | Matcha terroir and deep green",
+    "description": "Tencha origins, cultivars, stone mills, and thick & thin tea. Expert notes on matcha from Uji, Nishio, and beyond."
+  },
+  "LocaleLayout": {
+    "title": "Shoujuen | Matcha terroir and deep green"
+  },
+  "Brand": {
+    "name": "Shoujuen",
+    "subtitle": "Matcha Journal"
+  },
+  "nav": {
+    "home": { "label": "Home", "description": "Deep green & ichigo ichie" },
+    "theMatcha": { "label": "THE MATCHA", "description": "Origin, cultivar, grind, taste" },
+    "producers": { "label": "PRODUCERS", "description": "Tea farmers & tea masters" },
+    "journal": { "label": "JOURNAL", "description": "Tencha & tea culture" },
+    "howTo": { "label": "HOW TO", "description": "Koicha, usucha & modern serves" }
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "ja": "日本語",
+    "en": "English"
+  },
+  "Footer": {
+    "description": "An independent journal on matcha (tencha): origin, cultivar, stone milling, and the spirit of tea. We do not sell tea.",
+    "ceoLine": "CEO / Editor-in-chief: {name} ({kana})",
+    "copyright": "Shoujuen Tea Journal. All rights reserved."
+  },
+  "Hero": {
+    "eyebrow": "Matcha · Tencha · Stone mill",
+    "line1": "One moment, one meeting.",
+    "line2": "A matcha experience.",
+    "lead": "Clear deep green, fine foam from the whisk, aroma lifted by the mill—matcha is a cup shaped by land and ritual. Shoujuen records those layers in words.",
+    "ctaProducers": "Meet PRODUCERS",
+    "ctaMatcha": "THE MATCHA guide",
+    "scroll": "Scroll"
+  },
+  "HomeClosing": {
+    "line": "In one cup of deep green, terroir and ritual dwell.",
+    "body": "From shaded growth to steaming, drying, and stone milling, every step is written into the bowl’s color and aroma. Shoujuen documents matcha’s diversity and culture with a taster’s eye."
+  },
+  "LatestArticles": {
+    "eyebrow": "Journal",
+    "title": "JOURNAL · Latest",
+    "intro": "Light under covers, particle size from the mill, koicha and usucha—specialist writing on tencha and matcha.",
+    "cta": "All JOURNAL posts",
+    "readUnit": "min"
+  },
+  "ProducersPreview": {
+    "eyebrow": "Producers",
+    "title": "Featured tencha makers",
+    "intro": "Shade days, steam, and mill speed—profiles we return to after many bowls in the field.",
+    "cta": "All PRODUCERS"
+  },
+  "Ceo": {
+    "eyebrow": "Editorial",
+    "title": "CEO · Editor-in-chief",
+    "intro": "The publisher’s profile and selected milestones (legendary tales).",
+    "legendsTitle": "Highlights",
+    "legendsSubtitle": "— Field work, editing, and tea practice"
+  },
+  "JournalPage": {
+    "eyebrow": "Journal",
+    "title": "JOURNAL",
+    "lead": "Shade, mill, koicha and usucha—matcha’s culture and science won’t fit in a single green. Notes from Uji, Nishio, and beyond.",
+    "count": "{count} articles",
+    "readMore": "Read article",
+    "readUnit": "min"
+  },
+  "Article": {
+    "back": "← JOURNAL index",
+    "readUnit": "min",
+    "draftNote": "(Full article in preparation—figures and sources to follow.)",
+    "notFoundTitle": "Article not found"
+  },
+  "TheMatcha": {
+    "metaTitle": "THE MATCHA · Catalog",
+    "metaDescription": "Uji, Nishio, Shizuoka—origins, cultivars, stone milling, color and taste in tasting-note form.",
+    "heroImageAlt": "Collage of tea leaves, deep green matcha, and whisked foam",
+    "eyebrow": "The Matcha",
+    "title": "Matcha catalog",
+    "lead": "From shade to steam, dry, and stone mill—every step is inscribed in the bowl’s deep green. A tasting-note style reference for origins, cultivars, and grind.",
+    "badge": "Matcha",
+    "origin": "Origin",
+    "cultivar": "Cultivar",
+    "milling": "Milling",
+    "color": "Color",
+    "aroma": "Aroma",
+    "palate": "Palate",
+    "finish": "Finish"
+  },
+  "ProducersPage": {
+    "eyebrow": "Producers",
+    "title": "Producers",
+    "metaDescription": "Tea farmers and tea masters devoted to tencha and matcha—soil, cultivars, and stone mills documented by Shoujuen.",
+    "lead": "Tencha aroma lives in shade days, steam, and mill speed. Soil history, cultivar choice, and workshop craft—recorded in the field.",
+    "soil": "Soil & terroir",
+    "process": "Tencha & milling",
+    "curator": "Taster’s note",
+    "curatorNote": "Shoujuen editorial · from tencha tastings and whisking logs",
+    "jumpNavLabel": "Jump to producer sections"
+  },
+  "HowTo": {
+    "metaTitle": "HOW TO · Whisking & enjoyment",
+    "imageAlt": "Whisking matcha and tea utensils",
+    "eyebrow": "How to",
+    "title": "Whisking & enjoyment",
+    "lead": "Koicha and usucha differ in water amount, temperature, and whisk motion. Baselines below work for practice and cafés; follow your school or host when in a formal setting.",
+    "thinTitle": "Usucha (thin tea)",
+    "thinSubtitle": "Raise a fine foam in the bowl",
+    "thickTitle": "Koicha (thick tea)",
+    "thickSubtitle": "Blend viscosity and umami",
+    "fieldTemp": "Water temp.",
+    "fieldAmount": "Matcha amount",
+    "fieldWhisk": "Whisk",
+    "fieldWait": "Timing",
+    "thinTempValue": "About 75–85°C (don’t over-boil; soft water is ideal)",
+    "thinAmountValue": "~2 chashaku (~2g) / ~70ml water",
+    "thinWhiskValue": "Fine tines; quick W-shaped strokes front-to-back and check foam",
+    "thinWaitValue": "Don’t over-whisk—done when fine foam covers evenly",
+    "thickTempValue": "Often 60–70°C (varies by school and matcha)",
+    "thickAmountValue": "~3.5–4g+; start with little water and add as needed",
+    "thickWhiskValue": "No foam—slow, even motion along the bowl bottom",
+    "thickWaitValue": "Avoid stirring too hard at once to prevent clumps",
+    "modernTitle": "Modern serves",
+    "modernBody": "In matcha lattes, milk fat can mask aroma—try a richer tencha or a light aeration to lift fragrance. For soda, powder settles easily; mix well and start stronger to account for ice melt.",
+    "backTop": "Back to home"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The URL may have changed or the article is not yet published.",
+    "back": "Back to home"
+  }
+}

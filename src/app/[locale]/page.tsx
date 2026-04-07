@@ -1,10 +1,19 @@
+import { setRequestLocale } from "next-intl/server"
+import { getTranslations } from "next-intl/server"
+
 import { CeoSection } from "@/components/home/ceo-section"
 import { HeroSection } from "@/components/home/hero-section"
 import { LatestArticles } from "@/components/home/latest-articles"
 import { ProducersPreview } from "@/components/home/producers-preview"
 import { FadeIn } from "@/components/motion/fade-in"
 
-export default function HomePage() {
+type Props = { params: Promise<{ locale: string }> }
+
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params
+  setRequestLocale(locale)
+  const t = await getTranslations("HomeClosing")
+
   return (
     <>
       <HeroSection />
@@ -19,10 +28,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <FadeIn y={20}>
             <p className="font-heading text-2xl font-medium leading-relaxed text-foreground sm:text-3xl">
-              一杯の濃緑に、風土と作法が宿る。
+              {t("line")}
             </p>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              碾茶は覆下栽培から蒸し、乾燥、石臼挽きまで、工程のすべてが茶碗の色と香りに刻まれます。松樹園では、抹茶の多様性と文化性を、目利きの視点で記録します。
+              {t("body")}
             </p>
           </FadeIn>
         </div>
