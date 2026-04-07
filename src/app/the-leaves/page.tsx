@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { LeafIcon, MountainIcon, Flame, Droplets } from "lucide-react"
 
 import { teaLeaves } from "@/data/tea-leaves"
@@ -41,6 +42,18 @@ export default function TheLeavesPage() {
             <p className="mt-4 max-w-2xl text-xs leading-relaxed text-muted-foreground">
               ※掲載クラスは抹茶を含みません。
             </p>
+          </FadeIn>
+          <FadeIn className="mt-10" delay={0.08}>
+            <div className="relative aspect-[2.1/1] max-h-[min(48vh,400px)] w-full overflow-hidden rounded-2xl border border-border/70 shadow-md">
+              <Image
+                src="/images/tea-varieties-collage.png"
+                alt="煎茶・焙じ・玄米茶の乾茶と、急須で淹れた澄んだ水色のコラージュ"
+                fill
+                sizes="(min-width: 1024px) 72rem, 100vw"
+                className="object-cover object-[50%_35%]"
+                priority
+              />
+            </div>
           </FadeIn>
         </div>
       </div>

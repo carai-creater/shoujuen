@@ -43,13 +43,17 @@ export function ProducersPreview() {
               <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/80 bg-card shadow-sm transition-all duration-500 hover:border-primary/30 hover:shadow-lg">
                 <div className="relative aspect-[16/10] w-full overflow-hidden">
                   <Image
-                    src="/images/tea-collage.png"
+                    src={
+                      i === 0
+                        ? "/images/tea-varieties-collage.png"
+                        : "/images/tea-collage.png"
+                    }
                     alt=""
                     fill
                     sizes="(min-width: 1024px) 40vw, 100vw"
                     className={cn(
                       "object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-[1.04]",
-                      i === 0 && "object-[28%_18%]",
+                      i === 0 && "object-[24%_20%]",
                       i === 1 && "object-[72%_75%]"
                     )}
                   />

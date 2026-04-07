@@ -21,11 +21,11 @@ export default function FarmsPage() {
       <header className="relative overflow-hidden border-b border-border/70">
         <div className="absolute inset-0">
           <Image
-            src="/images/tea-collage.png"
+            src="/images/tea-varieties-collage.png"
             alt=""
             fill
             priority
-            className="object-cover object-[50%_25%]"
+            className="object-cover object-[50%_30%]"
             sizes="100vw"
             aria-hidden
           />
@@ -73,13 +73,17 @@ export default function FarmsPage() {
                   <div className="lg:col-span-5">
                     <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border/80 shadow-md">
                       <Image
-                        src="/images/tea-collage.png"
+                        src={
+                          index === 0
+                            ? "/images/tea-varieties-collage.png"
+                            : "/images/tea-collage.png"
+                        }
                         alt=""
                         fill
                         sizes="(min-width: 1024px) 38vw, 100vw"
                         className={cn(
                           "object-cover transition-transform duration-[2s] hover:scale-[1.02]",
-                          index === 0 && "object-[30%_20%]",
+                          index === 0 && "object-[26%_22%]",
                           index === 1 && "object-[70%_70%]"
                         )}
                       />

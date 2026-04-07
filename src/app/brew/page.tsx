@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 
 import { FadeIn } from "@/components/motion/fade-in"
@@ -13,8 +14,18 @@ export const metadata: Metadata = {
 
 export default function BrewPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-24 sm:px-6 sm:py-32">
+    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
       <FadeIn>
+        <div className="relative mb-10 aspect-[2/1] w-full overflow-hidden rounded-2xl border border-border/70 shadow-sm">
+          <Image
+            src="/images/tea-varieties-collage.png"
+            alt="急須から煎茶を注ぐ様子と、抽出後の茶葉とガラスピッチャーの水色"
+            fill
+            sizes="(min-width: 768px) 48rem, 100vw"
+            className="object-cover object-[50%_72%]"
+            priority
+          />
+        </div>
         <p className="text-xs font-medium uppercase tracking-[0.35em] text-primary">
           Brew
         </p>

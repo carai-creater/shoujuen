@@ -39,12 +39,12 @@ export function HeroSection() {
           transition={{ duration: 22, ease: [0.22, 1, 0.36, 1] }}
         >
           <Image
-            src="/images/tea-collage.png"
-            alt="茶畑、乾茶、急須から注がれる煎茶の水色、焙じ、ガラス急須などのイメージ"
+            src="/images/tea-varieties-collage.png"
+            alt="煎茶の乾茶、焙じ茶、玄米茶、急須から注がれる緑の水色、抽出後の葉のコラージュ"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[50%_22%]"
+            className="object-cover object-[50%_32%]"
           />
         </motion.div>
         <div
