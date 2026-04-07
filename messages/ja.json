@@ -25,7 +25,15 @@
   "Footer": {
     "description": "抹茶（碾茶）の産地、品種、石臼挽き、茶道の精神性を、濃緑の一杯とともに読み解く独立メディア。販売は行いません。",
     "ceoLine": "代表取締役 / 編集長：{name}（{kana}）",
-    "copyright": "Shoujuen Tea Journal. All rights reserved."
+    "copyright": "Shoujuen Tea Journal. All rights reserved.",
+    "social": {
+      "heading": "公式アカウント",
+      "openExternal": "{site}（新しいタブで開く）",
+      "note": "note",
+      "x": "X",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "Hero": {
     "eyebrow": "Matcha · Tencha · Ishiusu",

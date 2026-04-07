@@ -25,7 +25,15 @@
   "Footer": {
     "description": "An independent journal on matcha (tencha): origin, cultivar, stone milling, and the spirit of tea. We do not sell tea.",
     "ceoLine": "CEO / Editor-in-chief: {name} ({kana})",
-    "copyright": "Shoujuen Tea Journal. All rights reserved."
+    "copyright": "Shoujuen Tea Journal. All rights reserved.",
+    "social": {
+      "heading": "Official accounts",
+      "openExternal": "{site} (opens in new tab)",
+      "note": "note",
+      "x": "X",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    }
   },
   "Hero": {
     "eyebrow": "Matcha · Tencha · Stone mill",
